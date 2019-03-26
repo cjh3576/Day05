@@ -73,14 +73,16 @@ public class SchoolMain5 {
 					if(stuNum == teacher.students[i].num) {
 						sv.view(teacher.students[i]);
 						find = !find;
-						break;
+						
 					}
 					if(find) {
 						System.out.println("없는 번호 입니다.");
 					}
 				
+				break;
 
-				case 4:// 프로그램 종료
+				case 4:
+					// 프로그램 종료
 					check = false;
 					System.out.println("프로그램 종료");
 					break;
@@ -90,6 +92,7 @@ public class SchoolMain5 {
 			}
 		}
 	} 
+}
 
 
 
