@@ -16,11 +16,7 @@ public class SchoolMain5 {
 		boolean check = true;
 		StudentView sv = new StudentView();
 
-
-
 		while(check) {
-
-
 			System.out.println("1. 학생정보 입력"); //학생 수, 정보 입력
 			System.out.println("2. 전체정보 조회");
 			System.out.println("3. 학생정보 검색");
@@ -57,7 +53,10 @@ public class SchoolMain5 {
 				break;
 			case 2:   //전체정보 조회
 				if(teacher.students!= null ) {
-					sv.listView(teacher);
+					Student [] students = new Student[teacher.students.length];
+					students = teacher.students;
+							
+					sv.listView(students);
 				}
 				else {
 					System.out.println("입력된 학생 정보가 없습니다");
@@ -73,26 +72,21 @@ public class SchoolMain5 {
 					if(stuNum == teacher.students[i].num) {
 						sv.view(teacher.students[i]);
 						find = !find;
-						
+						break;
 					}
-					if(find) {
-						System.out.println("없는 번호 입니다.");
-					}
+				}
+				if(find) {
+					System.out.println("없는 번호 입니다.");
+				}
 				
 				break;
-
-				case 4:
-					// 프로그램 종료
-					check = false;
-					System.out.println("프로그램 종료");
-					break;
+			case 4:// 프로그램 종료
+				check = false;
+				System.out.println("프로그램 종료");
+				break;
 
 
-				} 
-			}
+			} 
 		}
-	} 
+	}
 }
-
-
-
