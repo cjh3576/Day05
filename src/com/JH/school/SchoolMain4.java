@@ -60,6 +60,7 @@ public class SchoolMain4 {
 			case 2: 
 				System.out.println("전체정보 조회");
 				for(int i = 0; i<num; i++) {
+					students = new Student[num];
 					System.out.println(i+1 + " 번 학생이름 : " +students[i].name );
 					System.out.println("번       호 : " + students[i].num);
 					System.out.println("국어점수 : " + students[i].kor);
