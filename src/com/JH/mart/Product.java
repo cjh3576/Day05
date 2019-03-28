@@ -5,6 +5,6 @@ public class Product {
 	int price;
 	int amount;
 	String brand;
-	
+	double sale;
 	
 }

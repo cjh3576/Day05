@@ -6,6 +6,7 @@ public class ProductView {
 		System.out.println(product.price);
 		System.out.println(product.amount);
 		System.out.println(product.brand);
+		System.out.println(product.sale);
 		
 	}
 }

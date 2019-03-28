@@ -12,6 +12,7 @@ public class MartMain {
 		product2.price = 20000;
 		product2.amount = 20;
 		product2.brand = "adidas";
+		product2.sale = 3.2;
 		
 		ProductView pv = new ProductView();
 		pv.listView(product2);
